@@ -92,7 +92,7 @@ erDiagram
 <img width="935" height="640" alt="スクリーンショット 2026-03-17 14 50 37" src="https://github.com/user-attachments/assets/20f1823a-6838-4d3d-8c13-d09519f26de5" />
 
 
-10.インフラ構成図
+### 10.インフラ構成図
 
 ```mermaid
 graph TD
