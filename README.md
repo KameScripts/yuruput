@@ -89,11 +89,12 @@ erDiagram
 - 新規ユーザー登録(user_new)?
 - ログイン(session_new / session_destroy)?
 
-![スクリーンショット 2026-03-17 14.50.37.png](attachment:bed139fd-1901-493e-9cb2-428b9f0b2674:スクリーンショット_2026-03-17_14.50.37.png)
+<img width="935" height="640" alt="スクリーンショット 2026-03-17 14 50 37" src="https://github.com/user-attachments/assets/20f1823a-6838-4d3d-8c13-d09519f26de5" />
+
 
 10.インフラ構成図
 
-```mermaide
+```mermaid
 graph TD
     subgraph Client [クライアント側]
         Browser[Webブラウザ<br>UI: Bootstrap]
