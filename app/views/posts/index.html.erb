@@ -1,0 +1,13 @@
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+        <% if @posts.present? %>
+          <%= render @posts %>
+        <% else %>
+          <div class="mb-3">投稿がありません</div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
