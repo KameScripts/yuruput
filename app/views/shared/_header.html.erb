@@ -4,7 +4,8 @@
       <%= link_to "ゆるプット", "/", class: "navbar-brand text-white fs-2 fw-bold m-0" %>    
       <div class="d-flex gap-3 ms-4"
         <div class="d-flex container-fluid px-4">
-          <%= link_to t('header.post_index'), "#", class: "navbar-brand text-white fs-6 fw-bold m-0" %>
+          <%= link_to t('header.post_new'), new_post_path, class: "navbar-brand text-white fs-6 fw-bold m-0" %>
+          <%= link_to t('header.post_index'), posts_path, class: "navbar-brand text-white fs-6 fw-bold m-0" %>
           <%= link_to t('header.logout'), logout_path, class: "navbar-brand text-white fs-6 fw-bold m-0", data: { turbo_method: :delete } %>
         </div>
       </div>

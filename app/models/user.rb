@@ -3,4 +3,5 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 255 }
   validates :email, presence: true, length: { maximum: 255 }
   validates :password, length: { minimum: 3}
+  has_many :posts, dependent: :destroy
 end
