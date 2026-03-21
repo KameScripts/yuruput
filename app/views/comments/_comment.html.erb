@@ -1,0 +1,26 @@
+<div class="col-sm-4 col-lg-12 mb-3">
+  <div id="comment-id-<%= comment.id %>">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        
+        <div class="d-flex justify-content-between align-items-start">
+          
+          <div class="card-text mb-0 pe-3">
+            <%= simple_format(comment.body, class: "mb-0") %>
+          </div>
+          
+          <div class="text-nowrap">
+            <%= link_to "#", id: "button-edit-#{comment.id}", class: "text-primary" do %>
+              <i class="bi bi-pencil-fill"></i>
+            <% end %>
+            <%= link_to comment_path(comment), id: "button-delete-#{comment.id}", class: "text-danger ms-2", data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' } do %>
+              <i class="bi bi-trash-fill"></i>
+            <% end %>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
