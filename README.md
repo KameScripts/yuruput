@@ -1,3 +1,5 @@
+<img width="1715" height="964" alt="スクリーンショット 2026-03-24 0 01 26" src="https://github.com/user-attachments/assets/3ebddc17-b8aa-4f62-95db-79bd8a301fe3" />
+
 ### 1. サービス概要
 
 アウトプットの最初の一歩を支援するサービス
