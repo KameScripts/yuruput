@@ -11,6 +11,11 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.build(post_params)
     if @post.save
+      # 🟢 ここでAIサービスを呼び出し、返ってきたテキストを変数に入れる
+      ai_response_text = AiCommentService.new(@post.body).call
+      
+      # 🟢 返ってきたテキストを使って、コメントをDBに保存する！
+      @post.comments.create!(body: ai_response_text)
       redirect_to posts_path, success: t('defaults.flash_message.created', item: Post.model_name.human)
     else
       flash.now[:danger] = t('defaults.flash_message.not_created', item: Post.model_name.human)
