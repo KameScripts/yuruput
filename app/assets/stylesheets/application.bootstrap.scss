@@ -4,3 +4,19 @@
 .bg-yuru-orange {
   background-color: #FFA500 !important; /* ここに好きなコードを入れる */
 }
+
+/* じわっと表示させるためのオリジナルクラス */
+.fade-in-image {
+  opacity: 0; /* 最初は完全に透明（見えない状態）にしておく */
+  animation: fadeIn 1.5s ease-in-out forwards; /* 1.5秒かけてfadeInアニメーションを実行 */
+}
+
+/* アニメーションの設計図 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* スタート時：透明 */
+  }
+  100% {
+    opacity: 1; /* ゴール時：完全に見える */
+  }
+}
